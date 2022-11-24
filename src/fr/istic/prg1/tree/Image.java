@@ -206,9 +206,10 @@ public class Image extends AbstractImage {
 	            recurseIntersection(it1,it2,itThis);
 	            it1.goUp();
 	            it2.goUp();
+	            itThis.goUp();
 	        }
 	        if(it2.getValue().state==1){
-	            prefixeAffect(it1,itThis);//peut être rajouter it2
+	            prefixeAffect(it1,itThis);
 
 	        }
 	        if(it2.getValue().state==0){
